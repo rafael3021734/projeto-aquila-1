@@ -1,4 +1,4 @@
-import { SearchBar } from "antd-mobile";
+import { NavBar, SearchBar } from "antd-mobile";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
@@ -22,10 +22,15 @@ const Search = () => {
     }
 
     return (
-        <div>
-            <SearchBar placeholder='Pesquisar barbearia' />
-            <PrestadorCard prestadores={prestadores} onClick={handlePrestadorClick}/>
-        </div>
+        <>
+        <NavBar onBack={() => navigate(-1)}>Pesquisa</NavBar>
+        <SearchBar placeholder='Pesquisar barbearia' />
+        {prestadores.map((prestador) => {
+            return (
+                <PrestadorCard key={prestador.id} prestador={prestador} onClick={handlePrestadorClick}/>
+            );
+        })}
+        </>
     );
 }
 
