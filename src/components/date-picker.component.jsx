@@ -21,7 +21,7 @@ const DatePicker = ({index, day, color, onClick}) => {
             <div style={{padding: '.1rem', color: `${color}`}}>
                 {weekdays[day.getDay()]}
             </div>
-            <div style={{color: `${color}`, fontSize: '200%', fontWeight: 'bold', padding: '.1rem'}}>
+            <div style={{color: `${color}`, height: 'calc(100vh - 405px - 80px)', fontSize: '200%', fontWeight: 'bold', padding: '.1rem'}}>
                 {day.getDate()}
             </div>
         </div>
