@@ -48,7 +48,7 @@ const Navigation = () => {
     
     return (
         <>
-            <Outlet/>
+             <Outlet/>
             <div style={{backgroundColor: '#2E64FE', bottom: 0, position: 'fixed', width: '100%', borderTop: 'solid 1px var(--adm-color-border)'}}>
                 <TabBar activeKey={pathname} onChange={value => setRouteActive(value)} >
                     {tabs.map(item => (
