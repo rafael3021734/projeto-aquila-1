@@ -47,7 +47,7 @@ const MapPage = () => {
         styles: [
           {
             elementType: "labels",
-            stylers: [{ visibility: "off" }],
+            stylers: [{ visibility: "true" }],
           },
         ],
       }}
