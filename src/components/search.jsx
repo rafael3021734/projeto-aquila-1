@@ -1,9 +1,7 @@
-
-
 // import React, { Component } from 'react'
 // import axios from 'axios'
 // class LiveSearchFilter extends Component {
-  
+
 //   constructor(props) {
 //     super(props)
 //     this.state = {
@@ -33,7 +31,7 @@
 //     }
 //     this.cancelToken = axios.CancelToken.source()
 //     await axios
-//       .get('https://projeto-aquila.herokuapp.com/api/prestadores/', {
+//       .get('http://ec2-54-164-45-9.compute-1.amazonaws.com/api/prestadores/', {
 //         cancelToken: this.cancelToken.token,
 //       })
 //       .then((res) => {
