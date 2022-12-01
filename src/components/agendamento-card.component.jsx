@@ -27,7 +27,9 @@ const AgendamentoCard = ({ agendamentoId }) => {
     const getAgendamento = async () => {
       const res = await axios.get(
         `http://ec2-54-164-45-9.compute-1.amazonaws.com/api/agendamentos/${agendamentoId}`
-      );
+      ).catch(error =>{
+        console.log(error.response)
+      });
 
       setAgendamento(res.data);
     };
